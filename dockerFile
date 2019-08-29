@@ -9,6 +9,6 @@ WORKDIR /var/www/futanaicha
 
 RUN go build -o service.out ./src/main.go
 
-CMD [ "./bin/service.out" ]
+CMD [ "./service.out" ]
 
 EXPOSE 3000 3000
