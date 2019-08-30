@@ -1,0 +1,14 @@
+FROM golang
+
+LABEL authorMail "concurrent.exec@gmail.com"
+
+RUN mkdir -p /var/www/futanaicha
+
+COPY ./ /var/www/futanaicha
+WORKDIR /var/www/futanaicha
+
+RUN go build -o service.out ./src/main.go
+
+CMD [ "./service.out" ]
+
+EXPOSE 80 80
