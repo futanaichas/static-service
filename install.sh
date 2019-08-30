@@ -1,4 +1,3 @@
-git pull
 docker build -t futanaicha/static-service .
 docker network create futanaicha
 mkdir -p ~/devopt/wwwroot/static
