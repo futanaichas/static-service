@@ -11,4 +11,4 @@ RUN go build -o service.out ./src/main.go
 
 CMD [ "./service.out" ]
 
-EXPOSE 3000 3000
+EXPOSE 80 80

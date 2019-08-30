@@ -55,6 +55,6 @@ func Upload() http.HandlerFunc {
 			return
 		}
 
-		w.Write(module.OkRes(uploadFile.CheckHash(), uploadFile.URL()))
+		w.Write(module.OkRes(uploadFile.Hash, uploadFile.URL()))
 	}
 }
